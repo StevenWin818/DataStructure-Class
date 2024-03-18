@@ -35,15 +35,11 @@ int countOddNodes(Node *head)
     Node *temp = head;
     while (temp != NULL)
     {
-        if (temp->data % 2 != 0)
-        {
-            count++;
-        }
+        if (temp->data % 2 != 0)    count++;
         temp = temp->next;
     }
     return count;
 }
-
 void changeOddNodes(Node *head)
 {
     Node *temp = head;
